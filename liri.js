@@ -1,20 +1,18 @@
 // Read and set environment variables
 require("dotenv").config();
 
-//VARS
+//variables
 var request = require("request");
 var fs = require("fs");
 var keys = require("./keys.js");
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
-//vars to capture user inputs.
+//user input
 var userOption = process.argv[2]; 
 var inputParameter = process.argv[3];
 
-//Execute function
 UserInputs(userOption, inputParameter);
 
-//FUNCTIONS
 function UserInputs (userOption, inputParameter){
     switch (userOption) {
     case 'concert-this':
@@ -34,11 +32,11 @@ function UserInputs (userOption, inputParameter){
     }
 }
 
-//Funtion for Concert Info: Bands in Town
+//concert-this
 function showConcertInfo(inputParameter){
     var queryUrl = "https://rest.bandsintown.com/artists/" + inputParameter + "/events?app_id=codingbootcamp";
     request(queryUrl, function(error, response, body) {
-    // If the request is successful
+    // if success
     if (!error && response.statusCode === 200) {
         var concerts = JSON.parse(body);
         for (var i = 0; i < concerts.length; i++) {  
@@ -60,10 +58,10 @@ function showConcertInfo(inputParameter){
     }
 });}
 
-//Funtion for Music Info: Spotify
+//spotify-this-song
 function showSongInfo(inputParameter) {
     if (inputParameter === undefined) {
-        inputParameter = "The Sign"; //default Song
+        inputParameter = "The Sign"; 
     }
     spotify.search(
         {
@@ -97,7 +95,7 @@ function showSongInfo(inputParameter) {
     );
 };
 
-//Funtion for Movie Info: OMDB
+//movie-this
 function showMovieInfo(inputParameter){
     if (inputParameter === undefined) {
         inputParameter = "Mr. Nobody"
@@ -110,7 +108,7 @@ function showMovieInfo(inputParameter){
     }
     var queryUrl = "http://www.omdbapi.com/?t=" + inputParameter + "&y=&plot=short&apikey=b3c0b435";
     request(queryUrl, function(error, response, body) {
-    // If the request is successful
+    //success
     if (!error && response.statusCode === 200) {
         var movies = JSON.parse(body);
         console.log("**********MOVIE INFO*********");  
@@ -139,7 +137,7 @@ function showMovieInfo(inputParameter){
 
 });}
 
-//function to get proper Rotten Tomatoes Rating
+//movie-this (ratings)
 function getRottenTomatoesRatingObject (data) {
     return data.Ratings.find(function (item) {
        return item.Source === "Rotten Tomatoes";
@@ -150,7 +148,7 @@ function getRottenTomatoesRatingObject (data) {
     return getRottenTomatoesRatingObject(data);
   }
 
-//function for reading out of random.txt file  
+//do-what-it-says 
 function showSomeInfo(){
 	fs.readFile('random.txt', 'utf8', function(err, data){
 		if (err){ 
