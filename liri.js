@@ -1,42 +1,42 @@
-// Read and set environment variables
+// set env var
 require("dotenv").config();
 
-//variables
+//variables global
 var request = require("request");
 var fs = require("fs");
 var keys = require("./keys.js");
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
-//user input
+//user input arguments
 var userOption = process.argv[2]; 
-var inputParameter = process.argv[3];
+var inputParam = process.argv.slice(3).join(" ");
 
-UserInputs(userOption, inputParameter);
-
-function UserInputs (userOption, inputParameter){
+UserInputs(userOption, inputParam);
+//switch case for inputs
+function UserInputs (userOption, inputParam){
     switch (userOption) {
     case 'concert-this':
-        showConcertInfo(inputParameter);
+        concertInfo(inputParam);
         break;
     case 'spotify-this-song':
-        showSongInfo(inputParameter);
+        songInfo(inputParam);
         break;
     case 'movie-this':
-        showMovieInfo(inputParameter);
+        movieInfo(inputParam);
         break;
     case 'do-what-it-says':
-        showSomeInfo();
+        saysInfo();
         break;
     default: 
         console.log("Invalid Option. Please type any of the following options: \nconcert-this \nspotify-this-song \nmovie-this \ndo-what-it-says")
     }
 }
 
-//concert-this
-function showConcertInfo(inputParameter){
-    var queryUrl = "https://rest.bandsintown.com/artists/" + inputParameter + "/events?app_id=codingbootcamp";
+//concert-this function
+function concertInfo(inputParam){
+    var queryUrl = "https://rest.bandsintown.com/artists/" + inputParam + "/events?app_id=codingbootcamp";
     request(queryUrl, function(error, response, body) {
-    // if success
+    // success
     if (!error && response.statusCode === 200) {
         var concerts = JSON.parse(body);
         for (var i = 0; i < concerts.length; i++) {  
@@ -55,18 +55,19 @@ function showConcertInfo(inputParameter){
         }
     } else{
       console.log('Error occurred.');
+      //fail switch
     }
 });}
 
-//spotify-this-song
-function showSongInfo(inputParameter) {
-    if (inputParameter === undefined) {
-        inputParameter = "The Sign"; 
+//spotify-this-song function
+function songInfo(inputParam) {
+    if (inputParam === undefined) {
+        inputParam = "The Sign"; 
     }
     spotify.search(
         {
             type: "track",
-            query: inputParameter
+            query: inputParam
         },
         function (err, data) {
             if (err) {
@@ -95,10 +96,10 @@ function showSongInfo(inputParameter) {
     );
 };
 
-//movie-this
-function showMovieInfo(inputParameter){
-    if (inputParameter === undefined) {
-        inputParameter = "Mr. Nobody"
+//movie-this function
+function movieInfo(inputParam){
+    if (inputParam === undefined) {
+        inputParam = "Mr. Nobody"
         console.log("-----------------------");
         fs.appendFileSync("log.txt", "-----------------------\n");
         console.log("If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/");
@@ -106,7 +107,7 @@ function showMovieInfo(inputParameter){
         console.log("It's on Netflix!");
         fs.appendFileSync("log.txt", "It's on Netflix!\n");
     }
-    var queryUrl = "http://www.omdbapi.com/?t=" + inputParameter + "&y=&plot=short&apikey=b3c0b435";
+    var queryUrl = "http://www.omdbapi.com/?t=" + inputParam + "&y=&plot=short&apikey=b3c0b435";
     request(queryUrl, function(error, response, body) {
     //success
     if (!error && response.statusCode === 200) {
@@ -119,8 +120,8 @@ function showMovieInfo(inputParameter){
         fs.appendFileSync("log.txt", "Release Year: " + movies.Year + "\n");
         console.log("IMDB Rating: " + movies.imdbRating);
         fs.appendFileSync("log.txt", "IMDB Rating: " + movies.imdbRating + "\n");
-        console.log("Rotten Tomatoes Rating: " + getRottenTomatoesRatingValue(movies));
-        fs.appendFileSync("log.txt", "Rotten Tomatoes Rating: " + getRottenTomatoesRatingValue(movies) + "\n");
+        console.log("Rotten Tomatoes Rating: " + getRTvalue(movies));
+        fs.appendFileSync("log.txt", "Rotten Tomatoes Rating: " + getRTvalue(movies) + "\n");
         console.log("Country of Production: " + movies.Country);
         fs.appendFileSync("log.txt", "Country of Production: " + movies.Country + "\n");
         console.log("Language: " + movies.Language);
@@ -133,23 +134,24 @@ function showMovieInfo(inputParameter){
         fs.appendFileSync("log.txt", "*****************************\n");
     } else{
       console.log('Error occurred.');
+      //fail safe
     }
 
 });}
 
-//movie-this (ratings)
-function getRottenTomatoesRatingObject (data) {
+//movie-this (ratings) function
+function getRTobject (data) {
     return data.Ratings.find(function (item) {
        return item.Source === "Rotten Tomatoes";
     });
   }
   
-  function getRottenTomatoesRatingValue (data) {
-    return getRottenTomatoesRatingObject(data);
+  function getRTvalue (data) {
+    return getRTobject(data);
   }
 
-//do-what-it-says 
-function showSomeInfo(){
+//do-what-it-says function
+function saysInfo(){
 	fs.readFile('random.txt', 'utf8', function(err, data){
 		if (err){ 
 			return console.log(err);
