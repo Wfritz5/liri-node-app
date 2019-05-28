@@ -6,10 +6,10 @@ languages used: Javascript, Node
 
 using one of the following commands:
 
-concert-this
-spotify-this-song
-movie-this
-do-what-it-says
+concert-this,
+spotify-this-song,
+movie-this,
+do-what-it-says,
 
 
 this will either search concerts for a band that is inputted after the command
