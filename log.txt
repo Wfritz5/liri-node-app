@@ -2650,3 +2650,285 @@ preview song: https://p.scdn.co/mp3-preview/5632d8e302d70afaa8f79c962aa4b2032a45
 album: The Essential "Weird Al" Yankovic
 artist(s): "Weird Al" Yankovic
 *****************************
+**********EVENT INFO*********
+0
+Name of the Venue: Veterans United Home Loans Amphitheater at Virginia Beach
+Venue Location: Virginia Beach
+Date of the Event: 2019-05-30T19:00:02
+*****************************
+**********EVENT INFO*********
+1
+Name of the Venue: Coastal Credit Union Music Park at Walnut Creek
+Venue Location: Raleigh
+Date of the Event: 2019-05-31T19:00:17
+*****************************
+**********EVENT INFO*********
+2
+Name of the Venue: Lakewood Amphitheatre
+Venue Location: Atlanta
+Date of the Event: 2019-06-01T19:00:43
+*****************************
+**********EVENT INFO*********
+3
+Name of the Venue: The Wharf Amphitheater
+Venue Location: Orange Beach
+Date of the Event: 2019-06-06T19:00:26
+*****************************
+**********EVENT INFO*********
+4
+Name of the Venue: Coral Sky Amphitheatre
+Venue Location: West Palm Beach
+Date of the Event: 2019-06-08T19:00:39
+*****************************
+**********EVENT INFO*********
+5
+Name of the Venue: MIDFLORIDA Credit Union Amphitheatre
+Venue Location: Tampa
+Date of the Event: 2019-06-09T19:00:32
+*****************************
+**********EVENT INFO*********
+6
+Name of the Venue: Austin360 Amphitheater
+Venue Location: Del Valle
+Date of the Event: 2019-06-13T19:00:38
+*****************************
+**********EVENT INFO*********
+7
+Name of the Venue: The Cynthia Woods Mitchell Pavilion
+Venue Location: The Woodlands
+Date of the Event: 2019-06-14T19:00:15
+*****************************
+**********EVENT INFO*********
+8
+Name of the Venue: Dos Equis Pavilion
+Venue Location: Dallas
+Date of the Event: 2019-06-15T19:00:54
+*****************************
+**********EVENT INFO*********
+9
+Name of the Venue: Ak-Chin Pavilion
+Venue Location: Phoenix
+Date of the Event: 2019-06-19T19:00:57
+*****************************
+**********EVENT INFO*********
+10
+Name of the Venue: North Island Credit Union Ampitheatre
+Venue Location: Chula Vista
+Date of the Event: 2019-06-21T19:00:18
+*****************************
+**********EVENT INFO*********
+11
+Name of the Venue: T-Mobile Arena
+Venue Location: Las Vegas
+Date of the Event: 2019-06-22T19:00:39
+*****************************
+**********EVENT INFO*********
+12
+Name of the Venue: FivePoint Amphitheatre
+Venue Location: Irvine
+Date of the Event: 2019-06-23T19:00:32
+*****************************
+**********EVENT INFO*********
+13
+Name of the Venue: Hollywood Bowl
+Venue Location: Los Angeles
+Date of the Event: 2019-06-25T19:00:14
+*****************************
+**********EVENT INFO*********
+14
+Name of the Venue: Toyota Amphitheatre
+Venue Location: Wheatland
+Date of the Event: 2019-06-28T19:00:43
+*****************************
+**********EVENT INFO*********
+15
+Name of the Venue: Shoreline Amphitheatre
+Venue Location: Mountain View
+Date of the Event: 2019-06-29T19:00:55
+*****************************
+**********EVENT INFO*********
+16
+Name of the Venue: Fiddler's Green Amphitheatre
+Venue Location: Englewood
+Date of the Event: 2019-07-11T19:00:42
+*****************************
+**********EVENT INFO*********
+17
+Name of the Venue: Hollywood Casino Amphitheatre
+Venue Location: Maryland Heights
+Date of the Event: 2019-07-13T19:00:42
+*****************************
+**********EVENT INFO*********
+18
+Name of the Venue: Walmart Arkansas Music Pavilion 
+Venue Location: Rogers
+Date of the Event: 2019-07-14T19:00:07
+*****************************
+**********EVENT INFO*********
+19
+Name of the Venue: Great Jones County Fair 
+Venue Location: Monticello
+Date of the Event: 2019-07-19T19:00:34
+*****************************
+**********EVENT INFO*********
+20
+Name of the Venue: Riverbend Music Center
+Venue Location: Cincinnati
+Date of the Event: 2019-07-20T19:00:11
+*****************************
+**********EVENT INFO*********
+21
+Name of the Venue: KeyBank Pavilion
+Venue Location: Burgettstown
+Date of the Event: 2019-07-21T19:00:21
+*****************************
+**********EVENT INFO*********
+22
+Name of the Venue: Blossom Music Center
+Venue Location: Cuyahoga Falls
+Date of the Event: 2019-07-26T19:00:32
+*****************************
+**********EVENT INFO*********
+23
+Name of the Venue: Jiffy Lube Live
+Venue Location: Bristow
+Date of the Event: 2019-07-27T19:00:38
+*****************************
+**********EVENT INFO*********
+24
+Name of the Venue: BB&T Pavilion
+Venue Location: Camden
+Date of the Event: 2019-07-28T19:00:47
+*****************************
+**********EVENT INFO*********
+25
+Name of the Venue: Bank of New Hampshire Pavilion
+Venue Location: Gilford
+Date of the Event: 2019-08-02T19:00:43
+*****************************
+**********EVENT INFO*********
+26
+Name of the Venue: Xfinity Center
+Venue Location: Mansfield
+Date of the Event: 2019-08-03T19:00:35
+*****************************
+**********EVENT INFO*********
+27
+Name of the Venue: Saratoga Performing Arts Center
+Venue Location: Saratoga Springs
+Date of the Event: 2019-08-04T19:00:24
+*****************************
+**********EVENT INFO*********
+28
+Name of the Venue: Merriweather Post Pavilion
+Venue Location: Columbia
+Date of the Event: 2019-08-08T19:00:15
+*****************************
+**********EVENT INFO*********
+29
+Name of the Venue: Constellation Brands-Marvin Sands Performing Arts Center 
+Venue Location: Canandaigua
+Date of the Event: 2019-08-09T19:00:05
+*****************************
+**********EVENT INFO*********
+30
+Name of the Venue: Madison Square Garden
+Venue Location: New York
+Date of the Event: 2019-08-10T19:00:16
+*****************************
+**********EVENT INFO*********
+31
+Name of the Venue: Madison Square Garden
+Venue Location: New York
+Date of the Event: 2019-08-11T19:00:14
+*****************************
+**********EVENT INFO*********
+32
+Name of the Venue: DTE Energy Music Theatre
+Venue Location: Village Of Clarkston
+Date of the Event: 2019-08-16T19:00:30
+*****************************
+**********EVENT INFO*********
+33
+Name of the Venue: Ruoff Home Mortgage Music Center
+Venue Location: Noblesville
+Date of the Event: 2019-08-17T19:00:50
+*****************************
+**********EVENT INFO*********
+34
+Name of the Venue: Iowa State Fair
+Venue Location: Des Moines
+Date of the Event: 2019-08-18T19:00:22
+*****************************
+**********EVENT INFO*********
+35
+Name of the Venue: Minnesota State Fair
+Venue Location: St Paul
+Date of the Event: 2019-08-22T19:00:27
+*****************************
+**********EVENT INFO*********
+36
+Name of the Venue: Alpine Valley Music Theatre
+Venue Location: East Troy
+Date of the Event: 2019-08-23T19:00:24
+*****************************
+**********EVENT INFO*********
+37
+Name of the Venue: Hollywood Casino Amphitheatre
+Venue Location: Tinley Park
+Date of the Event: 2019-08-24T19:00:49
+*****************************
+**********EVENT INFO*********
+38
+Name of the Venue: Budweiser Stage
+Venue Location: Toronto
+Date of the Event: 2019-08-29T19:00:48
+*****************************
+**********EVENT INFO*********
+39
+Name of the Venue: Hersheypark Stadium
+Venue Location: Hershey
+Date of the Event: 2019-08-30T19:00:32
+*****************************
+**********EVENT INFO*********
+40
+Name of the Venue: XFINITY Theatre
+Venue Location: Hartford
+Date of the Event: 2019-08-31T19:00:08
+*****************************
+**********EVENT INFO*********
+41
+Name of the Venue: PNC Music Pavilion
+Venue Location: Charlotte
+Date of the Event: 2019-09-05T19:00:46
+*****************************
+**********EVENT INFO*********
+42
+Name of the Venue: Oak Mountain Amphitheatre
+Venue Location: Pelham
+Date of the Event: 2019-09-06T19:00:59
+*****************************
+**********EVENT INFO*********
+43
+Name of the Venue: Bridgestone Arena
+Venue Location: Nashville
+Date of the Event: 2019-09-07T19:00:31
+*****************************
+**********EVENT INFO*********
+44
+Name of the Venue: Colonial Life Arena
+Venue Location: Columbia
+Date of the Event: 2019-09-11T19:00:25
+*****************************
+**********EVENT INFO*********
+45
+Name of the Venue: Colonial Life Arena 
+Venue Location: Columbia
+Date of the Event: 2019-09-12T19:00:55
+*****************************
+**********EVENT INFO*********
+46
+Name of the Venue: Colonial Life Arena
+Venue Location: Columbia
+Date of the Event: 2019-09-13T19:00:13
+*****************************
